@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Syne Mono', monospace;
+}
+.content{
+    margin: auto;
+    text-align: center;
+}
+body{
+    background-color: #d2f5e3;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Iter', sans-serif;
+    width: 100vw;
+    height: 100vh;
+    color: #050505;
+    font-family: Bree Serif;
+    font-size: 1.35em;
+}
+label{
+    font-size: 1em;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 2em;
+}
+.title{
+    text-align: center;
+    background-color: #94b4a4;
+    color: aliceblue;
+    padding: 1.5%;
+}
+.btn{
+    text-align: center;
+    padding: .7rem;
+    line-height: .8rem;
+    border: none;
+    margin: .5rem;
+    color: white;
+    background: rgb(83, 83, 83);
+    border-radius: 3px;
+    font-size: .8rem;
+    cursor: pointer;
+}
+.btn:hover{
+    background: rgb(149, 153, 152);
+    transition: .5s;
+}
+
+
+.container{
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-weight: bold;
+    flex-wrap: wrap;
+    
+}
+
+.imgResultados{
+    width: 50px; height: 50px;
+}
+.container img{
+    margin: auto;
+    max-width: 100%;
+    width: 50%; 
+}
+.encima{
+    position: absolute;
+    margin-top: auto;
+    left: 50%;
+    transform: translate(-50%, -120%);
+    width: auto;
+}
+
+.encima2{
+    position: absolute;
+    margin-top: auto;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    width: auto;
+}
+.form-control{
+    color: #373A41;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: auto;   
+    max-width: 100%;
+    padding: 0;
+}
+.form-control:focus{
+    border-color: red;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(255, 0, 0, 0.6);
+  }
+  
+  .telefono:focus{
+      border-color: rgb(0, 140, 255);
+      box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(0, 132, 255, 0.6);
+    }
+.imgFondo{
+    display: flex;
+    opacity: 40%;
+    position: relative;
+    height: 29.5em;
+    width:auto;
+}
+.respuesta{
+    padding: 5%;
+}
+
+.flip-card {
+  width: 20em;
+  height: 20em;
+  margin-top: 5%;
+}
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-card-back {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  display: flex;
+    justify-content:center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: column;
+}
+
+.encabezado{
+    width: auto;
+    height: min-content;
+    background-color: #94b4a4;
+    color: aliceblue;
+}
+i{
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+ i:hover{
+    color: #d2f5e3;
+    transition: .5s;
+}
+
+#degradado{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    opacity: 80%;
+    position: relative;
+    margin: auto;
+    top: 20%;
+}
+.texto-encima{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+}
+
+.campoTelefono{
+    visibility: hidden;
+    display: none;
+    text-align: center;
+}
+.campoTelefono.active{
+    visibility:visible;
+    display: block;
+    margin: 0 auto;
+}
+
+#inicioSesionIndex{
+    display: flex;
+    justify-content:flex-end;
+    
+}
+.verActividades{
+    display: flex;
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 20%;
+    margin-right: 20%;
+    width: auto;
+    height: 30rem;
+    border: solid 3px#94b4a4;
+    border-radius: 10px;
+    overflow-y: scroll;
+}
+
+.verActividades img{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    opacity: 40%;
+    position: relative;
+    margin: auto;
+}
+
+.resultados{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-around;
+}
+
+.resultados .texto{
+    width: 20em;
+    height: 20em;
+    margin-top: 5%;
+    text-align: center;
+}
+
+.resultados .termometro{
+    width: 20em;
+    height: 20em;
+    margin-top: 5%;
+    text-align: center
+}
+.container .lista{
+    padding: 1rem;
+    margin: 2rem;
+    width: 20em;
+    height:15em;
+    overflow: scroll;
+    overflow-x: hidden
+}
+
+
+.informacion{
+    background-color: #9b9da0;
+    text-align: center;
+}
+
+.informacion td{
+    background-color: #ffffff;
+    border: 3px solid #C0CCDA;
+    padding: .5rem;
+    
+}
+
